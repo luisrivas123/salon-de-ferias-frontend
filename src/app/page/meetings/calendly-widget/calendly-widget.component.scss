@@ -1,0 +1,8 @@
+.calendly-inline-widget {
+  width: 100%;              //El widget ocupa todo el ancho disponible
+  height: 100%;             //El widget ocupa toda la altura disponible
+  max-width: 100%;          //Limita el ancho para que no se desborde
+  max-height: 600px;        //Limita la altura para que no se desborde
+  overflow: hidden;         //Previene cualquier tipo de scroll dentro del widget
+  box-sizing: border-box;   //Asegura que los bordes se incluyan en el tamaño total
+}

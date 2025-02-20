@@ -1,0 +1,26 @@
+@import '../../../scss/responsive';
+@import '../../../scss/var';
+@import '../../../scss/buttons';
+
+.meetings-container {
+    .meetings-header {
+        img {
+            width: 100%; // Mantiene el ancho al 100% del contenedor
+            height: auto; // Mantiene la relacion aspecto
+            max-height: 300px; // Establece una altura maxima para que no sea demaseado alta
+            object-fit: cover; // Ajusta la imagen al contenedor
+            overflow: hidden; // Oculta cualquier parte de la imagen que se sale del contenedor
+
+            .calendly-inline-widget {
+                margin: 20px auto; // Agrega un pequeño margen alrededor del widget
+                max-width: 100%; // Asegura que el widget no se salga del contenedor
+                max-height: 600px; // Establece una altura maxima para que no sea demaseado alta
+                overflow: hidden; // Previene cualquier tipo del scroll dentro del widget
+            }
+
+            @media (min-width: 1200px) {
+                max-height: 600px; // 3 columnas en pantallas extragrades
+            }
+        }
+    }
+}

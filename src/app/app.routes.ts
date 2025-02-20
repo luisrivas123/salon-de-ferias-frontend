@@ -157,4 +157,17 @@ export const routes: Routes = [
         (m) => m.StandCompanyComponent
       ),
   }, // Ruta dinámica con parámetro ID
+
+
+   /**
+   * Ruta para ver el calendario, protegida por `authGuard` y cargada de forma diferida.
+   * @path /meetings
+   */
+   {
+    path: 'meetings',
+    loadComponent: () =>
+      import(
+        './page/meetings/meetings.component'
+      ).then (m => m.MeetingsComponent),
+  }
 ];
