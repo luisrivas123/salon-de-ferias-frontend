@@ -29,15 +29,15 @@ export class CalendlyWidgetComponent implements OnInit, AfterViewInit {
   
 
   ngAfterViewInit(): void {
-    console.log('Calendly:', (window as any).Calendly); // Verifica si Calendly está disponible
+    console.log('Calendly:', Calendly); // Verifica si Calendly está disponible
   
-    if (!(window as any).Calendly) {
+    if (!Calendly) {
       console.error('Calendly no está definido. El script no se ha cargado correctamente.');
       return;
     }
   
     if (this.calendlyUrl && this.calendlyContainer) {
-      (window as any).Calendly.initInlineWidget({
+      Calendly.initInlineWidget({
         url: this.calendlyUrl,
         parentElement: this.calendlyContainer.nativeElement,
         prefill: {
@@ -47,6 +47,4 @@ export class CalendlyWidgetComponent implements OnInit, AfterViewInit {
       });
     }
   }
-  
-
 }

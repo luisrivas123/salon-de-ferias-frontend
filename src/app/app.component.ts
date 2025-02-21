@@ -13,6 +13,9 @@ import { CompanyService } from './services/information.service';
 import { UserService } from './services/users.service';
 import { TokenService } from './services/cookie.service';
 import { Observable } from 'rxjs';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from '../environments/environment';
 
 /**
  * @class AppComponent
@@ -29,6 +32,7 @@ import { Observable } from 'rxjs';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
+    AngularFirestoreModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

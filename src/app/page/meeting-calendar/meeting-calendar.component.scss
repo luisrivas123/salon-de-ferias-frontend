@@ -1,0 +1,11 @@
+/* meeting-calendar.component.scss */
+:host {
+    display: block;
+    margin: 20px;
+  }
+  
+  full-calendar {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
