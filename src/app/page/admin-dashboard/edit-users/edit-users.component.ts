@@ -17,22 +17,21 @@ import { catchError, of } from 'rxjs';
  * mediante un formulario reactivo en un diálogo modal.
  */
 @Component({
-  selector: 'app-edit-users',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatDialogActions,
-    MatDialogContent,
-    MatSelectModule,
-    MatOptionModule
-  ],
-  templateUrl: './edit-users.component.html',
-  styleUrl: './edit-users.component.scss'
+    selector: 'app-edit-users',
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatDialogActions,
+        MatDialogContent,
+        MatSelectModule,
+        MatOptionModule
+    ],
+    templateUrl: './edit-users.component.html',
+    styleUrl: './edit-users.component.scss'
 })
 export class EditUsersComponent {
 

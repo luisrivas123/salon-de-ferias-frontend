@@ -3,11 +3,10 @@ import { Component, Input, OnInit, AfterViewInit, ElementRef, ViewChild } from '
 declare var Calendly: any;
 
 @Component({
-  selector: 'app-calendly-widget',
-  standalone: true,
-  imports: [],
-  templateUrl: './calendly-widget.component.html',
-  styleUrl: './calendly-widget.component.scss'
+    selector: 'app-calendly-widget',
+    imports: [],
+    templateUrl: './calendly-widget.component.html',
+    styleUrl: './calendly-widget.component.scss'
 })
 export class CalendlyWidgetComponent implements OnInit, AfterViewInit {
   @Input() calendlyUrl!: string; // URL de la página de Calendly

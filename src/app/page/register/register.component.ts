@@ -23,23 +23,22 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { LoginComponent } from '../login/login.component';
 
 @Component({
-  selector: 'app-register',
-  standalone: true,
-  imports: [
-    MatCheckboxModule,
-    HttpClientModule,
-    MatTabsModule,
-    CommonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule,
-    ReactiveFormsModule,
-    RouterModule,
-  ],
-  templateUrl: './register.component.html',
-  styleUrl: './register.component.scss',
+    selector: 'app-register',
+    imports: [
+        MatCheckboxModule,
+        HttpClientModule,
+        MatTabsModule,
+        CommonModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatIconModule,
+        ReactiveFormsModule,
+        RouterModule,
+    ],
+    templateUrl: './register.component.html',
+    styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
   // Control de visibilidad de la contraseña

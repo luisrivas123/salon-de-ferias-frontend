@@ -29,19 +29,18 @@ import { MatOptionModule } from '@angular/material/core';
  */
 
 @Component({
-  selector: 'app-form-root',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss'],
-  standalone: true,
-  imports: [
-    CKEditorModule,
-    CommonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    ReactiveFormsModule,
-    MatOptionModule,
-  ],
+    selector: 'app-form-root',
+    templateUrl: './form.component.html',
+    styleUrls: ['./form.component.scss'],
+    imports: [
+        CKEditorModule,
+        CommonModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        ReactiveFormsModule,
+        MatOptionModule,
+    ]
 })
 export class FormComponent implements AfterViewInit {
   /** Editor de CKEditor para el campo de descripción */

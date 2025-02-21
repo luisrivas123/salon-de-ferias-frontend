@@ -22,20 +22,19 @@ import { environment } from '../../../environments/environment';
  */
 
 @Component({
-  selector: 'app-company-dashboar',
-  standalone: true,
-  imports: [
-    CarouselComponent,
-    MatCardModule,
-    CarouselControlComponent,
-    CarouselInnerComponent,
-    CarouselItemComponent,
-    CommonModule,
-    FormComponent,
-    StandDesingComponent,
-  ],
-  templateUrl: './company-dashboar.component.html',
-  styleUrl: './company-dashboar.component.scss',
+    selector: 'app-company-dashboar',
+    imports: [
+        CarouselComponent,
+        MatCardModule,
+        CarouselControlComponent,
+        CarouselInnerComponent,
+        CarouselItemComponent,
+        CommonModule,
+        FormComponent,
+        StandDesingComponent,
+    ],
+    templateUrl: './company-dashboar.component.html',
+    styleUrl: './company-dashboar.component.scss'
 })
 export class CompanyDashboarComponent {
   private apiUrl = `${environment.url}`;

@@ -27,11 +27,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
  */
 
 @Component({
-  selector: 'app-offers',
-  standalone: true,
-  imports: [ReactiveFormsModule, MatGridListModule, MatInputModule, MatButtonModule, MatSelectModule, MatFormFieldModule, MatCardModule, CommonModule],
-  templateUrl: './offers.component.html',
-  styleUrl: './offers.component.scss'
+    selector: 'app-offers',
+    imports: [ReactiveFormsModule, MatGridListModule, MatInputModule, MatButtonModule, MatSelectModule, MatFormFieldModule, MatCardModule, CommonModule],
+    templateUrl: './offers.component.html',
+    styleUrl: './offers.component.scss'
 })
 export class OffersComponent {
 

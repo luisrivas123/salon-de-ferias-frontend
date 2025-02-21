@@ -10,11 +10,10 @@ import { MatDialogRef } from '@angular/material/dialog';
  * una URL de video que se pasará de vuelta al componente padre.
  */
 @Component({
-  selector: 'app-videos',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './videos.component.html',
-  styleUrls: ['./videos.component.scss']
+    selector: 'app-videos',
+    imports: [CommonModule, ReactiveFormsModule],
+    templateUrl: './videos.component.html',
+    styleUrls: ['./videos.component.scss']
 })
 export class VideosComponent {
   /** 

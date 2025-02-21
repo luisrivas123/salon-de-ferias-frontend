@@ -44,19 +44,18 @@ import { Router } from '@angular/router';
  * diseñado para manejar características interactivas y responsivas.
  */
 @Component({
-  selector: 'app-profile',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatDividerModule,
-    MatButtonModule,
-    MatCardModule,
-    MatGridListModule,
-    ReactiveFormsModule,
-    MatIconModule,
-  ],
-  templateUrl: './home-company.component.html',
-  styleUrl: './home-company.component.scss',
+    selector: 'app-profile',
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        MatButtonModule,
+        MatCardModule,
+        MatGridListModule,
+        ReactiveFormsModule,
+        MatIconModule,
+    ],
+    templateUrl: './home-company.component.html',
+    styleUrl: './home-company.component.scss'
 })
 export class HomeCompanyComponent {
   JobTypeMap = JobTypeMap;

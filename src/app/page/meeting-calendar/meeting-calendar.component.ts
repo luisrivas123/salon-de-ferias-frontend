@@ -6,11 +6,10 @@ import { CalendarOptions } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 
 @Component({
-  selector: 'app-meeting-calendar',
-  standalone: true,
-  imports: [FullCalendarModule], // Agregar FullCalendarModule aquí
-  templateUrl: './meeting-calendar.component.html',
-  styleUrls: ['./meeting-calendar.component.scss'],
+    selector: 'app-meeting-calendar',
+    imports: [FullCalendarModule], // Agregar FullCalendarModule aquí
+    templateUrl: './meeting-calendar.component.html',
+    styleUrls: ['./meeting-calendar.component.scss']
 })
 export class MeetingCalendarComponent implements OnInit {
   events: any[] = [];

@@ -5,11 +5,10 @@ import { Router } from '@angular/router';
 import { CompanyDataService } from '../../../services/company-data.service';
 
 @Component({
-  selector: 'app-gallery-company',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './gallery-company.component.html',
-  styleUrl: './gallery-company.component.scss',
+    selector: 'app-gallery-company',
+    imports: [CommonModule],
+    templateUrl: './gallery-company.component.html',
+    styleUrl: './gallery-company.component.scss'
 })
 export class GalleryCompanyComponent implements OnInit {
   companies: any[] = [];

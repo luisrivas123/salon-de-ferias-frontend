@@ -13,11 +13,10 @@ import { MatCardModule } from '@angular/material/card';
  * También permite editar y eliminar usuarios mediante diálogos y servicios.
  */
 @Component({
-  selector: 'app-user-list',
-  standalone: true,
-  imports: [CommonModule, MatCardModule],
-  templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.scss'],
+    selector: 'app-user-list',
+    imports: [CommonModule, MatCardModule],
+    templateUrl: './user-list.component.html',
+    styleUrls: ['./user-list.component.scss']
 })
 export class UserListComponent implements OnInit {
   /** Título de la sección, configurable por `@Input` */

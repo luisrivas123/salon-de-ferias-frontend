@@ -20,19 +20,18 @@ import { UserService } from '../../services/users.service';
 import { EditUsersComponent } from './edit-users/edit-users.component';
 
 @Component({
-  selector: 'app-profile-visitor',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatDividerModule,
-    MatButtonModule,
-    MatCardModule,
-    MatGridListModule,
-    ReactiveFormsModule,
-    MatIconModule,
-  ],
-  templateUrl: './profile-visitor.component.html',
-  styleUrl: './profile-visitor.component.scss',
+    selector: 'app-profile-visitor',
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        MatButtonModule,
+        MatCardModule,
+        MatGridListModule,
+        ReactiveFormsModule,
+        MatIconModule,
+    ],
+    templateUrl: './profile-visitor.component.html',
+    styleUrl: './profile-visitor.component.scss'
 })
 export class ProfileVisitorComponent implements OnInit {
   loading = signal<boolean>(true); // Para controlar si se está cargando

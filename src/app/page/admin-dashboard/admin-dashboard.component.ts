@@ -13,14 +13,13 @@ import { UserListComponent } from "./user-list/user-list.component";
  * Este componente es autónomo (`standalone`) y se declara con sus componentes y módulos necesarios.
  */
 @Component({
-  selector: 'app-admin-dashboard',
-  standalone: true,
-  templateUrl: './admin-dashboard.component.html',
-  styleUrls: ['./admin-dashboard.component.scss'],
-  imports: [
-    CommonModule, // Importar CommonModule para funcionalidad básica
-    UserListComponent
-]
+    selector: 'app-admin-dashboard',
+    templateUrl: './admin-dashboard.component.html',
+    styleUrls: ['./admin-dashboard.component.scss'],
+    imports: [
+        CommonModule, // Importar CommonModule para funcionalidad básica
+        UserListComponent
+    ]
 })
 export class AdminDashboardComponent {
 

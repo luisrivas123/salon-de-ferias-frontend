@@ -32,18 +32,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 
 @Component({
-  selector: 'app-stand-company',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatDividerModule,
-    MatButtonModule,
-    MatCardModule,
-    MatGridListModule,
-    MatIconModule,
-  ],
-  templateUrl: './stand-company.component.html',
-  styleUrl: './stand-company.component.scss',
+    selector: 'app-stand-company',
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        MatButtonModule,
+        MatCardModule,
+        MatGridListModule,
+        MatIconModule,
+    ],
+    templateUrl: './stand-company.component.html',
+    styleUrl: './stand-company.component.scss'
 })
 export class StandCompanyComponent implements OnInit {
   company: any = null;

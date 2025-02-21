@@ -34,22 +34,21 @@ import { environment } from '../../../../environments/environment';
  * Además, incluye una vista previa en tiempo real de las selecciones.
  */
 @Component({
-  templateUrl: './stand-desing.component.html',
-  styleUrls: ['./stand-desing.component.scss'],
-  selector: 'app-desing-root',
-  standalone: true,
-  imports: [
-    MatFormFieldModule,
-    MatDividerModule,
-    MatCardModule,
-    MatInputModule,
-    MatSelectModule,
-    CommonModule,
-    ReactiveFormsModule,
-    BannerComponent,
-    MatIconModule,
-    MatGridListModule,
-  ],
+    templateUrl: './stand-desing.component.html',
+    styleUrls: ['./stand-desing.component.scss'],
+    selector: 'app-desing-root',
+    imports: [
+        MatFormFieldModule,
+        MatDividerModule,
+        MatCardModule,
+        MatInputModule,
+        MatSelectModule,
+        CommonModule,
+        ReactiveFormsModule,
+        BannerComponent,
+        MatIconModule,
+        MatGridListModule,
+    ]
 })
 export class StandDesingComponent implements OnInit {
   private apiUrl = `${environment.url}`;

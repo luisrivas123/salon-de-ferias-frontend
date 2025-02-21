@@ -10,11 +10,10 @@ import { Router } from '@angular/router';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 @Component({
-  selector: 'app-landing-page',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, CountdownTimerComponent],
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss'],
+    selector: 'app-landing-page',
+    imports: [CommonModule, ReactiveFormsModule, CountdownTimerComponent],
+    templateUrl: './landing-page.component.html',
+    styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
   // Contadores existentes

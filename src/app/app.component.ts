@@ -23,19 +23,18 @@ import { environment } from '../environments/environment';
  * el rol del usuario, y ofrece funcionalidades para crear usuarios y navegar.
  */
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    RouterLink,
-    CommonModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatListModule,
-    AngularFirestoreModule,
-  ],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        RouterLink,
+        CommonModule,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatListModule,
+        AngularFirestoreModule,
+    ],
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   /**

@@ -36,22 +36,21 @@ import { UserService } from '../../services/users.service';
  */
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [
-    MatCheckboxModule,
-    HttpClientModule,
-    CommonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule,
-    ReactiveFormsModule,
-    RouterModule,
-  ],
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+    selector: 'app-login',
+    imports: [
+        MatCheckboxModule,
+        HttpClientModule,
+        CommonModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatIconModule,
+        ReactiveFormsModule,
+        RouterModule,
+    ],
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
   // Control de visibilidad de la contraseña

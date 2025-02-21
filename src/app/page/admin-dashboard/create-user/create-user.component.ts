@@ -20,13 +20,12 @@ import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
  * @description Este componente permite crear un nuevo usuario mediante un formulario reactivo dentro de un modal.
  */
 @Component({
-  selector: 'app-create-user',
-  standalone: true,
-  templateUrl: './create-user.component.html',
-  styleUrls: ['./create-user.component.scss'],
-  imports: [
-    MatCheckboxModule, MatDialogModule, HttpClientModule, MatTabsModule, CommonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, ReactiveFormsModule, RouterModule
-  ]
+    selector: 'app-create-user',
+    templateUrl: './create-user.component.html',
+    styleUrls: ['./create-user.component.scss'],
+    imports: [
+        MatCheckboxModule, MatDialogModule, HttpClientModule, MatTabsModule, CommonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule, ReactiveFormsModule, RouterModule
+    ]
 })
 export class CreateUserComponent {
 

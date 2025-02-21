@@ -5,11 +5,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FormComponent } from "../../company-dashboar/form/form.component";
 
 @Component({
-  selector: 'app-edit-form',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FormComponent],
-  templateUrl: './edit-form.component.html',
-  styleUrl: './edit-form.component.scss'
+    selector: 'app-edit-form',
+    imports: [CommonModule, ReactiveFormsModule, FormComponent],
+    templateUrl: './edit-form.component.html',
+    styleUrl: './edit-form.component.scss'
 })
 export class EditFormComponent {
   form: FormGroup;

@@ -17,21 +17,20 @@ import { MatInputModule } from '@angular/material/input';
 import { UserService } from '../../services/users.service';
 
 @Component({
-  selector: 'app-offers-list',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatButtonModule,
-    MatDialogModule,
-    MatDividerModule
-  ],
-  templateUrl: './all-offers.component.html',
-  styleUrls: ['./all-offers.component.scss'],
+    selector: 'app-offers-list',
+    imports: [
+        CommonModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatButtonModule,
+        MatDialogModule,
+        MatDividerModule
+    ],
+    templateUrl: './all-offers.component.html',
+    styleUrls: ['./all-offers.component.scss']
 })
 export class AllOffersComponent implements OnInit {
   offers: ExtendedOffer[] = [];

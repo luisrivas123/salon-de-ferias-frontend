@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, NgZone, ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-countdown-timer',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './countdown-timer.component.html',
-  styleUrls: ['./countdown-timer.component.scss']
+    selector: 'app-countdown-timer',
+    imports: [CommonModule],
+    templateUrl: './countdown-timer.component.html',
+    styleUrls: ['./countdown-timer.component.scss']
 })
 export class CountdownTimerComponent implements OnInit, OnDestroy {
   targetDate: Date = new Date('2024-12-31T23:59:59'); // Fecha objetivo

@@ -14,11 +14,10 @@ import { MatDialog } from '@angular/material/dialog';
  * incluyendo previsualización, zoom y posicionamiento de imágenes.
  */
 @Component({
-  selector: 'app-banner-root',
-  templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.scss'],
-  standalone: true,
-  imports: [CommonModule, MatDividerModule, ReactiveFormsModule, MatCardModule, MatSliderModule, MatFormFieldModule]
+    selector: 'app-banner-root',
+    templateUrl: './banner.component.html',
+    styleUrls: ['./banner.component.scss'],
+    imports: [CommonModule, MatDividerModule, ReactiveFormsModule, MatCardModule, MatSliderModule, MatFormFieldModule]
 })
 export class BannerComponent implements OnInit {
   /**
