@@ -171,15 +171,5 @@ export const routes: Routes = [
       ).then (m => m.MeetingsComponent),
   },
 
-   /**
-   * Ruta para ver el calendario, protegida por `authGuard` y cargada de forma diferida.
-   * @path /meeting-calendar
-   */
-   {
-    path: 'meeting-calendar',
-    loadComponent: () =>
-      import(
-        './page/meeting-calendar/meeting-calendar.component'
-      ).then (m => m.MeetingCalendarComponent),
-  }
+  
 ];

@@ -3,24 +3,62 @@
 @import '../../../scss/buttons';
 
 .meetings-container {
+    text-align: center; // Centra el texto y el contenido
+    //padding: 20px; // Añade espacio alrededor del contenido
+
     .meetings-header {
         img {
-            width: 100%; // Mantiene el ancho al 100% del contenedor
-            height: auto; // Mantiene la relacion aspecto
-            max-height: 300px; // Establece una altura maxima para que no sea demaseado alta
-            object-fit: cover; // Ajusta la imagen al contenedor
-            overflow: hidden; // Oculta cualquier parte de la imagen que se sale del contenedor
-
-            .calendly-inline-widget {
-                margin: 20px auto; // Agrega un pequeño margen alrededor del widget
-                max-width: 100%; // Asegura que el widget no se salga del contenedor
-                max-height: 600px; // Establece una altura maxima para que no sea demaseado alta
-                overflow: hidden; // Previene cualquier tipo del scroll dentro del widget
-            }
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+            overflow: hidden;
 
             @media (min-width: 1200px) {
-                max-height: 600px; // 3 columnas en pantallas extragrades
+                max-height: 600px;
             }
         }
+    }
+
+    h2 {
+        font-size: 24px; // Aumentamos un poco el tamaño del título
+        color: #333; // Color oscuro para mejor contraste
+        margin-top: 20px; // Espaciado superior
+        margin-bottom: 10px; // Espaciado inferior
+    }
+
+    p {
+        font-size: 18px; // Tamaño de fuente más amigable
+        color: #666; // Color gris para menor dureza visual
+        margin-bottom: 20px;
+    }
+
+    .calendly-login-btn {
+        @extend .button--primary;
+        color: #ffffff;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        display: inline-block; // Evita que se estire en ancho completo
+        margin-top: 10px;
+        border: none; // Asegura que no haya un borde visible
+        outline: none; // Elimina el borde oscuro al hacer clic
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:focus {
+            outline: none; // Evita el contorno cuando el botón está enfocado
+            box-shadow: none; // Asegura que no haya sombra adicional
+        }
+    }
+
+    // Centrar el botón en su propio contenedor flex
+    .calendly-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
